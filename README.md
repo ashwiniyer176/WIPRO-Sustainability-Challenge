@@ -1,43 +1,35 @@
-# Problem Statement 
-This should be a brief description of the domain of your dataset (e.g. if it is the Titanic Dataset then write about the ship, the incident that happened, what you're trying to do with the data).
+# [WIPRO Sustainability Challenge](https://machinehack.com/hackathon/wipro_sustainability_machine_learning_challenge/overview)
+
+ The world is waking up to the deleterious effect of fossil fuels on our environment. As the doomsday clock ticks away, human beings are turning to renewable energy to avert a possible apocalypse. Fortunately, the sun is a well-spring of clean energy. Taking the cue, Wipro, in association with MachineHack, has designed a forecasting challenge to optimise solar power generation using ML models.
+
+## Problem Statement
+
+A solar power generation company wants to optimize solar power production and needs the prediction model to predict the Clearsky Global Horizontal Irradiance(GHI).
+
+**The evaluation metric used is the Mean Squared Error**
+
 ## Dataset
 
-The dataset used is the [Name of the Dataset](Download link) from (source of download e.g Kaggle). If the task is a classification task, then you must specify the number of classes and give a 1 line description of each class as follows(example of Iris Dataset). 
+The dataset used is the [WIPRO Sustainability Dataset](https://machinehack.com/hackathon/wipro_sustainability_machine_learning_challenge/data) from MachineHack. The task is time-series forecasting of the Clearsky Global Horizontal Irradiance(GHI) values over a period of ten years with a timestep of 30 minutes. 
 
-The 3 class labels are:
-<br>
 
-**1. Iris Setosa:** Given iris flower belongs to the Setosa species
+**Target Variable: ClearSky DHI, CLearSky DNI, CLearSky GHI**
 <br>
-**2. Iris Virginica:** Given iris flower belongs to the Virginica species
-<br>
-**3. Iris Versicolor:** Given iris flower belongs to the Versicolor species
-
-If the task is a regression task, then explain the target variable and give brief statistics.(e.g. Housing Prices)
-
-**Target Variable: SalePrice**
-<br>
-<br>
+<!-- <br>
 Sale Price refers to the selling price of the house.
 <br>
 **Mean Selling Price:** 121,000$
 <br>
 **Max Selling Price:** 1,000,000$
 <br>
-**Min Selling Price:** 45,000$
+**Min Selling Price:** 45,000$ -->
+
+**Note: Do not shuffle the sequence of the test series**
 
 
 ## Model(s) Used
 
-This needs to be a description of the model used and a brief overview of how it works in theory (e.g taken of a CNN Model): 
-
-The network architecture used was a basic CNN model, with Max Pooling and ReLU Activation functions. Input images are resized to an optimal size and then fed into the **Convolutional layer**. These images are converted to their pixel values, which can be imagined as a three-dimensional matrix for the purpose of visualization. The **Convolutional layer** has a kernel. This kernel is generally a small matrix of specified kernel size mxnx3 (3 for RGB images). 
-<br>
-
-**Rectified Linear Unit (ReLU)** is the activation layer used in CNNs.The activation function is applied to increase non-linearity in the CNN. Images are made of different objects that are not linear to each other.
-
-
-**Max Pooling:** A limitation of the feature map output of Convolutional Layers is that they record the precise position of features in the input. This means that small movements in the position of the feature in the input image will result in a different feature map. This can happen with re-cropping, rotation, shifting, and other minor changes to the input image. A common approach to addressing this problem from signal processing is called down sampling. This is where a lower resolution version of an input signal is created that still contains the large or important structural elements, without the fine detail that may not be as useful to the task.
+This needs to be a description of the model used and a brief overview of how it works in theory 
 
 ## Future Work
 Good ideas or strategies that you were not able to implement which you think can help  improve performance.
